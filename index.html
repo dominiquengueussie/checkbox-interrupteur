@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox-light</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="light.jpg">
+</head>
+
+<body style="background: #f0f2f5;">
+    <div class="light-mode">
+        <div style="color:#1877f2; font-weight:bold;font-size:25px;">Mode nuit</div>
+        <div>
+            <label class="rocker rocker-small">
+            <input id="case1" type="checkbox" onclick="verifier()">
+            <span class="switch-left">Oui</span>
+            <span class="switch-right">Non</span>
+        </label>
+        </div>
+    </div>
+    <div>
+        <h2 id="titre" style="text-align: center;text-decoration:underline;color:orange;">MODE NUIT AVEC COMMUTATEUR</h2>
+        <div id="text" style="margin:auto; font-weight:bold;">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolores tenetur id culpa eaque, animi illo porro necessitatibus consequatur, aut consequuntur inventore vero perspiciatis commodi! Vel eaque repellendus quis asperiores. Ipsum, optio. Blanditiis,
+                corrupti atque. Assumenda amet quo quibusdam dolor molestiae ab, quasi perspiciatis debitis ea asperiores sequi, error quidem praesentium quos, ipsa veniam autem inventore nulla quae. Est, cum. Officia sunt tempora mollitia maiores repellendus
+                velit soluta, reiciendis, eum, modi voluptatem unde repellat harum adipisci nostrum consectetur illum atque optio repudiandae iste commodi culpa iusto quaerat? Ducimus, laborum illo. Quia at est cupiditate cum soluta, dolor ratione accusamus
+                assumenda laboriosam illum dignissimos natus, delectus a voluptates sapiente eos, tempora optio fuga perspiciatis minus adipisci. Dolorem praesentium reiciendis nam cupiditate! Fuga totam nostrum vitae eligendi! Maiores, rerum? Sint, magni
+                amet, autem beatae consectetur molestias aspernatur earum aut quo, maxime maiores asperiores totam id aliquam iusto? Fuga consequatur omnis reiciendis consequuntur!
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function verifier() {
+
+            if (document.getElementById("case1").checked) {
+                document.body.style.backgroundColor = 'black';
+                document.getElementById("text").style.color = "white";
+                document.getElementById("text").style.fontWeight = "bold";
+
+
+            } else {
+                document.body.style.backgroundColor = '#f0f2f5';
+                document.getElementById("text").style.color = "black";
+                document.getElementById("text").style.fontWeight = "bold";
+
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
